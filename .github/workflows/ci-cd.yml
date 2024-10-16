@@ -5,6 +5,8 @@ on:
       - develop
   pull_request:
     types: [opened, synchronize, reopened]
+    branches:
+      - develop
 jobs:
   build:
     name: Build and analyze
