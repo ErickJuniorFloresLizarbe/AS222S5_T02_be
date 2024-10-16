@@ -6,7 +6,6 @@ import org.springframework.data.relational.core.mapping.Table;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import java.time.LocalDateTime;
 
-@CrossOrigin(origins = "*")
 @Data
 @Table(name = "messages")
 public class MessagesModel {
