@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aistudio
+  r2dbc:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    #url: r2dbc:postgresql://ep-ancient-breeze-a5k5mp47.us-east-2.aws.neon.tech:5432/aistudio_openia?sslmode=require
+    #username: aistudio_openia_owner
+    #password: ep4IK1bNaFmv
+    show-sql: true
+  contentmoderator:
+    apikey: ${API_KEY}
+    #apikey: AIzaSyC4Qe02m3cTlChhhsgqSWYlQZxok5VTZEI
