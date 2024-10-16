@@ -10,7 +10,6 @@ import reactor.core.publisher.Mono;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/service/conversation")
 public class ConversationsRest {
