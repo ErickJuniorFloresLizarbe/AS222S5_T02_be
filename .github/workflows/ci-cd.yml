@@ -1,13 +1,12 @@
 name: SonarCloud
+
 on:
   push:
     branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
-    branches:
       - develop
+
 jobs:
+  #SONARCLOUD 
   build:
     name: Build and analyze
     runs-on: ubuntu-latest
@@ -36,4 +35,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ErickJuniorFloresLizarbe_AS222S5_T02_be
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=juancondorijara_CognitiveServices_ContentModerator
