@@ -44,8 +44,8 @@ jobs:
           file: Dockerfile  # Asegúrate de que el archivo Dockerfile esté en la raíz del repositorio
           push: true
           tags: |
-            ${{ secrets.DOCKER_HUB_NAMESPACE }}/dockers:latest
-            ${{ secrets.DOCKER_HUB_NAMESPACE }}/dockers:${{ env.version }}
+            ${{ secrets.DOCKER_HUB_USERNAME }}/dockers:latest
+            ${{ secrets.DOCKER_HUB_USERNAME }}/dockers:${{ env.version }}
 
       - name: Clean up
         run: docker system prune -af  # Opcional, limpia el sistema Docker
